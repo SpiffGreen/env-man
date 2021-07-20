@@ -37,8 +37,7 @@ class EnvManger {
                 const value = i.slice(idx+1);
                 process.env[key.trim()] = value.trim();
             });
-        } catch(err) {
-            console.log(err);
+        } catch {
             return;
         }
     }
