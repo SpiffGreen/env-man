@@ -32,12 +32,13 @@ class EnvManger {
             let content = fs.readFileSync(pathToEnvFile, {encoding: "utf-8"});
             content = content.split("\n");
             content.forEach(i => {
-                const idx = str.indexOf("=");
-                const key = str.slice(0, idx);
-                const value = str.slice(idx+1);
+                const idx = i.indexOf("=");
+                const key = i.slice(0, idx);
+                const value = i.slice(idx+1);
                 process.env[key.trim()] = value.trim();
             });
-        } catch {
+        } catch(err) {
+            console.log(err);
             return;
         }
     }
