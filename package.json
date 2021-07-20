@@ -1,5 +1,5 @@
 {
-  "name": "env-manager",
+  "name": "env-man",
   "version": "0.0.0",
   "description": "A simple plugin for managing environment variables in nodejs",
   "main": "index.js",
@@ -21,7 +21,7 @@
   "author": "Spiff Jekey-Green",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SpiffGreen/env-manager/issues"
+    "url": "https://github.com/SpiffGreen/env-man/issues"
   },
-  "homepage": "https://github.com/SpiffGreen/env-manager#readme"
+  "homepage": "https://github.com/SpiffGreen/env-man#readme"
 }
