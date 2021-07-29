@@ -18,7 +18,7 @@ npm install env-manager
 #### Basic Usage
 The example below will load environment variables from a `.env` file in the current folder.
 ```js
-require("env-manager").config(__dirname);
+require("env-manager").config();
 ```
 
 #### Set values

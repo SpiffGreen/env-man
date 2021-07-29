@@ -1,7 +1,7 @@
 /**
  * @package env-manager
  * @author  Spiff Jekey-Green
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 const path = require("path");
