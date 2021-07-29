@@ -1,7 +1,7 @@
 /**
  * @package env-manager
  * @author  Spiff Jekey-Green
- * @version 0.0.0
+ * @version 0.0.1
  */
 
 const path = require("path");
@@ -16,7 +16,11 @@ class EnvManger {
     }
 
     config(envFolderPath) {
-        this.loadFromFile(path.join(envFolderPath, '.env'));
+        if(envFolderPath) {
+            this.loadFromFile(path.join(envFolderPath, '.env'));
+        } else {
+            this.loadFromFile(path.join(path.dirname(process.argv[1]), ".env"));
+        }
     }
 
     set(key, value) {
@@ -47,7 +51,7 @@ module.exports = new EnvManger();
 
 /*
 Sample usage
-require("./index").config(__dirname);
+require("./index").config();
 
 console.log(process.env.SECRET);
 console.log(process.env.DB_URL);
